@@ -34,6 +34,13 @@
                 },
                 {
                   "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/Vision_Target_ID",
+                  "_title": "ID",
+                  "_glyph": 148,
+                  "_showGlyph": false
+                },
+                {
+                  "_type": "Text View",
                   "_source0": "network_table:///SmartDashboard/Vision_Target_Pitch",
                   "_title": "Pitch",
                   "_glyph": 148,
@@ -77,7 +84,7 @@
                 {
                   "_type": "Text View",
                   "_source0": "network_table:///SmartDashboard/Vision_Target_Status",
-                  "_title": "SmartDashboard/Vision_Target_Status",
+                  "_title": "Log",
                   "_glyph": 148,
                   "_showGlyph": false
                 }

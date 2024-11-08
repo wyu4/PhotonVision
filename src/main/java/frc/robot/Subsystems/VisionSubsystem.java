@@ -45,6 +45,7 @@ public class VisionSubsystem extends SubsystemBase {
     SmartDashboard.putBoolean("Vision_Target_Status_Bool", true);
     PhotonTrackedTarget target = result.getBestTarget();
 
+    SmartDashboard.putNumber("Vision_Target_ID", target.getFiducialId());
     SmartDashboard.putNumber("Vision_Target_Yaw", target.getYaw());
     SmartDashboard.putNumber("Vision_Target_Pitch", target.getPitch());
     SmartDashboard.putNumber("Vision_Target_Area", target.getArea());
@@ -64,9 +65,5 @@ public class VisionSubsystem extends SubsystemBase {
     // }
     // return getUnreadResults().get(unreadResults.size()-1);
     return camera.getLatestResult();
-  }
-
-  public void takeSnapshot() {
-    camera.takeOutputSnapshot();
   }
 }
