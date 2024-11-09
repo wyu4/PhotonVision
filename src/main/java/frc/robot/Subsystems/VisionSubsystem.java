@@ -33,16 +33,15 @@ public class VisionSubsystem extends SubsystemBase {
 
     if (result == null) {
       SmartDashboard.putString("Vision_Target_Status", "Result not found.");
-      SmartDashboard.putBoolean("Vision_Target_Status_Bool", false);
       return;
-    } else if (!result.hasTargets()) {
+    }
+
+    if (!result.hasTargets()) {
       SmartDashboard.putString("Vision_Target_Status", "Result found, no targets found.");
-      SmartDashboard.putBoolean("Vision_Target_Status_Bool", false);
       return;
     }
 
     SmartDashboard.putString("Vision_Target_Status", "Result found, receiving target data.");
-    SmartDashboard.putBoolean("Vision_Target_Status_Bool", true);
     PhotonTrackedTarget target = result.getBestTarget();
 
     SmartDashboard.putNumber("Vision_Target_ID", target.getFiducialId());

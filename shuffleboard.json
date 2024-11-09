@@ -14,7 +14,7 @@
           "0,0": {
             "size": [
               9,
-              4
+              3
             ],
             "content": {
               "_type": "List Layout",
@@ -23,15 +23,6 @@
               "_showGlyph": true,
               "Layout/Label position": "LEFT",
               "_children": [
-                {
-                  "_type": "Boolean Box",
-                  "_source0": "network_table:///SmartDashboard/Vision_Target_Status_Bool",
-                  "_title": "Status",
-                  "_glyph": 148,
-                  "_showGlyph": false,
-                  "Colors/Color when true": "#7CFC00FF",
-                  "Colors/Color when false": "#8B0000FF"
-                },
                 {
                   "_type": "Text View",
                   "_source0": "network_table:///SmartDashboard/Vision_Target_ID",
