@@ -4,7 +4,6 @@
 
 package frc.robot.Subsystems;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.photonvision.PhotonCamera;
@@ -77,7 +76,7 @@ public class VisionSubsystem extends SubsystemBase {
    */
   public PhotonTrackedTarget getTarget(int fiducialId) {
     PhotonPipelineResult result = getLatestResult();
-    if (!result.hasTargets()) {
+    if (result.hasTargets()) {
       for (PhotonTrackedTarget target : result.getTargets()) {
         if (target.getFiducialId() == fiducialId) {
           return target;
